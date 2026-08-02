@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bio-Babel — social card source</title>
+<!--
+  Source for assets/img/og-card.png (1200x630, the OpenGraph / Twitter preview).
+
+  Link-preview crawlers (X, Facebook, LinkedIn, Slack, Discord) do not accept SVG,
+  so the card has to be a raster. Re-render it with:
+
+    chrome --headless=new --disable-gpu --hide-scrollbars \
+           --window-size=1200,630 --force-device-scale-factor=2 \
+           --screenshot=og@2x.png tools/og-card.html
+    # then downscale og@2x.png to exactly 1200x630
+
+  Text is baked at render time, so the typeface is whatever the rendering machine
+  resolves from the stack below — which is the point: the card then looks the same
+  for every viewer, unlike SVG text.
+-->
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{
+    position:relative;background:#0B0E14;
+    font-family:Inter,"SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",
+                Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    display:flex;flex-direction:column;justify-content:space-between;
+    padding:76px 80px;
+  }
+  .bg{position:absolute;inset:0;pointer-events:none}
+  .grid{
+    position:absolute;inset:0;
+    background-image:linear-gradient(to right,rgba(255,255,255,.045) 1px,transparent 1px),
+                     linear-gradient(to bottom,rgba(255,255,255,.045) 1px,transparent 1px);
+    background-size:40px 40px;
+    -webkit-mask-image:radial-gradient(ellipse 80% 75% at 30% 35%,#000 10%,transparent 85%);
+  }
+  .glow-v{position:absolute;width:820px;height:620px;left:-190px;top:-210px;border-radius:50%;
+    background:radial-gradient(circle,rgba(109,75,242,.34),transparent 68%);filter:blur(40px)}
+  .glow-g{position:absolute;width:600px;height:460px;right:-160px;bottom:-190px;border-radius:50%;
+    background:radial-gradient(circle,rgba(242,200,121,.13),transparent 68%);filter:blur(40px)}
+
+  .top{position:relative;display:flex;align-items:center;gap:16px}
+  .top img{width:58px;height:58px;display:block}
+  .top b{font-size:27px;font-weight:700;letter-spacing:-.03em;color:#FFFCF2}
+  .top b i{color:#A78BFA;font-style:normal}
+
+  .mid{position:relative}
+  h1{font-size:61px;line-height:1.13;font-weight:700;letter-spacing:-.036em}
+  h1 .a{background:linear-gradient(180deg,#FFFFFF 20%,rgba(255,255,255,.72));
+        -webkit-background-clip:text;color:transparent}
+  h1 .b{background:linear-gradient(96deg,#A78BFA 4%,#F2C879 92%);
+        -webkit-background-clip:text;color:transparent}
+  p{margin-top:26px;max-width:47ch;font-size:23px;line-height:1.6;color:#96A0B4}
+  p strong{color:#E8EDF6;font-weight:600}
+
+  .bot{position:relative;display:flex;align-items:baseline;justify-content:space-between;
+       font-family:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+       font-size:17px;letter-spacing:.09em}
+  .bot .url{color:#F2C879}
+  .bot .meta{color:#5C677D;text-transform:uppercase;letter-spacing:.13em;font-size:15px}
+</style>
+</head>
+<body>
+  <div class="bg"><div class="glow-v"></div><div class="glow-g"></div><div class="grid"></div></div>
+
+  <div class="top">
+    <img src="../assets/img/logo-mark.svg" alt="">
+    <b>Bio<i>-</i>Babel</b>
+  </div>
+
+  <div class="mid">
+    <h1><span class="a">The classics of bioinformatics,</span><br>
+        <span class="b">in more than one tongue.</span></h1>
+    <p>Carrying a library across a language boundary with its semantics intact —
+       a problem particular to no pair of languages. Proving it on <strong>R&nbsp;→&nbsp;Python</strong>.</p>
+  </div>
+
+  <div class="bot">
+    <span class="url">bio-babel.github.io</span>
+    <span class="meta">pure Python · no rpy2 · each library independently maintained</span>
+  </div>
+</body>
+</html>

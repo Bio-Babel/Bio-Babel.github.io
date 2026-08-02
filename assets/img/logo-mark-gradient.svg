@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none" role="img" aria-label="Bio-Babel">
+  <title>Bio-Babel</title>
+  <desc>A stepped Tower of Babel of four battered storeys, cornices and arched galleries.</desc>
+  <defs>
+    <linearGradient id="bbAscend" gradientUnits="userSpaceOnUse" x1="256" y1="474" x2="256" y2="48">
+      <stop offset="0"    stop-color="#6A48F2"/>
+      <stop offset="0.55" stop-color="#8B5CF6"/>
+      <stop offset="0.82" stop-color="#B49BFF"/>
+      <stop offset="1"    stop-color="#F2C879"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bbAscend)" d="M220 48h72l13 58h-98z M185 126h142l17 72H168z M146 220h220l21 90H125z M103 334h306l25 100H78z M198 104H314a4 4 0 0 1 4 4V118a4 4 0 0 1 -4 4H198a4 4 0 0 1 -4 -4V108a4 4 0 0 1 4 -4z M158 196H354a4 4 0 0 1 4 4V212a4 4 0 0 1 -4 4H158a4 4 0 0 1 -4 -4V200a4 4 0 0 1 4 -4z M112 308H400a4 4 0 0 1 4 4V326a4 4 0 0 1 -4 4H112a4 4 0 0 1 -4 -4V312a4 4 0 0 1 4 -4z M64 432H448a4 4 0 0 1 4 4V450a4 4 0 0 1 -4 4H64a4 4 0 0 1 -4 -4V436a4 4 0 0 1 4 -4z M46 452H466a4 4 0 0 1 4 4V470a4 4 0 0 1 -4 4H46a4 4 0 0 1 -4 -4V456a4 4 0 0 1 4 -4z M271 96v-18a15 15 0 0 0 -30 0v18z M215 178v-24a15 15 0 0 0 -30 0v24z M271 178v-24a15 15 0 0 0 -30 0v24z M327 178v-24a15 15 0 0 0 -30 0v24z M177 290v-30a17 17 0 0 0 -34 0v30z M225 290v-30a17 17 0 0 0 -34 0v30z M273 290v-30a17 17 0 0 0 -34 0v30z M321 290v-30a17 17 0 0 0 -34 0v30z M369 290v-30a17 17 0 0 0 -34 0v30z M141 414v-40a19 19 0 0 0 -38 0v40z M196 414v-40a19 19 0 0 0 -38 0v40z M251 414v-40a19 19 0 0 0 -38 0v40z M306 414v-40a19 19 0 0 0 -38 0v40z M361 414v-40a19 19 0 0 0 -38 0v40z M416 414v-40a19 19 0 0 0 -38 0v40z"/>
+</svg>

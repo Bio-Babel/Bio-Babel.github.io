@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="240" viewBox="0 0 1080 240" fill="none" role="img" aria-label="Bio-Babel">
+  <title>Bio-Babel</title>
+  <desc>A stepped Tower of Babel of four battered storeys, cornices and arched galleries.</desc>
+  <defs>
+    <linearGradient id="bbAscend" gradientUnits="userSpaceOnUse" x1="256" y1="474" x2="256" y2="48">
+      <stop offset="0"    stop-color="#6A48F2"/>
+      <stop offset="0.55" stop-color="#8B5CF6"/>
+      <stop offset="0.82" stop-color="#B49BFF"/>
+      <stop offset="1"    stop-color="#F2C879"/>
+    </linearGradient>
+    <radialGradient id="bbGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="bbGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1080" height="240" fill="#0B0E14"/>
+  <rect width="1080" height="240" fill="url(#bbGrid)"/>
+  <ellipse cx="180" cy="120" rx="265" ry="165" fill="url(#bbGlow)"/>
+  <rect y="239" width="1080" height="1" fill="#FFFFFF" fill-opacity="0.08"/>
+  <g transform="translate(180 120) scale(0.42) translate(-256 -261)">
+    <path fill="url(#bbAscend)" d="M220 48h72l13 58h-98z M185 126h142l17 72H168z M146 220h220l21 90H125z M103 334h306l25 100H78z M198 104H314a4 4 0 0 1 4 4V118a4 4 0 0 1 -4 4H198a4 4 0 0 1 -4 -4V108a4 4 0 0 1 4 -4z M158 196H354a4 4 0 0 1 4 4V212a4 4 0 0 1 -4 4H158a4 4 0 0 1 -4 -4V200a4 4 0 0 1 4 -4z M112 308H400a4 4 0 0 1 4 4V326a4 4 0 0 1 -4 4H112a4 4 0 0 1 -4 -4V312a4 4 0 0 1 4 -4z M64 432H448a4 4 0 0 1 4 4V450a4 4 0 0 1 -4 4H64a4 4 0 0 1 -4 -4V436a4 4 0 0 1 4 -4z M46 452H466a4 4 0 0 1 4 4V470a4 4 0 0 1 -4 4H46a4 4 0 0 1 -4 -4V456a4 4 0 0 1 4 -4z M271 96v-18a15 15 0 0 0 -30 0v18z M215 178v-24a15 15 0 0 0 -30 0v24z M271 178v-24a15 15 0 0 0 -30 0v24z M327 178v-24a15 15 0 0 0 -30 0v24z M177 290v-30a17 17 0 0 0 -34 0v30z M225 290v-30a17 17 0 0 0 -34 0v30z M273 290v-30a17 17 0 0 0 -34 0v30z M321 290v-30a17 17 0 0 0 -34 0v30z M369 290v-30a17 17 0 0 0 -34 0v30z M141 414v-40a19 19 0 0 0 -38 0v40z M196 414v-40a19 19 0 0 0 -38 0v40z M251 414v-40a19 19 0 0 0 -38 0v40z M306 414v-40a19 19 0 0 0 -38 0v40z M361 414v-40a19 19 0 0 0 -38 0v40z M416 414v-40a19 19 0 0 0 -38 0v40z"/>
+  </g>
+  <text x="340" y="126" font-family="Inter,&quot;SF Pro Display&quot;,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Helvetica,Arial,sans-serif" font-size="74" font-weight="700" letter-spacing="-2.6" fill="#FFFCF2">Bio<tspan fill="#8B5CF6">-</tspan>Babel</text>
+  <text x="344" y="164" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,Menlo,Consolas,&quot;Liberation Mono&quot;,monospace" font-size="16.5" fill="#F2C879" textLength="616" lengthAdjust="spacing">THE CLASSICS, KEPT ALIVE IN MORE THAN ONE TONGUE</text>
+</svg>
