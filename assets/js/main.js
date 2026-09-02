@@ -30,8 +30,8 @@
   /* ─────────────────────────────────────────── nav: active section link ─ */
   var linkFor = {};
   $$('#navLinks a').forEach(function (a) {
-    var id = a.getAttribute('href').slice(1);
-    if (id) linkFor[id] = a;
+    var href = a.getAttribute('href') || '';   /* page links (paper/, ../#why) are not sections */
+    if (href.charAt(0) === '#' && href.length > 1) linkFor[href.slice(1)] = a;
   });
   var sections = Object.keys(linkFor)
     .map(function (id) { return document.getElementById(id); })
@@ -53,7 +53,8 @@
   var revealTargets = $$([
     '.section .eyebrow', '.section .h2', '.section .lede',
     '.card', '.lib', '.sys', '.zig', '.flow', '.split',
-    '.join', '.filters', '.libs__note', '.closer__inner'
+    '.join', '.filters', '.libs__note', '.closer__inner',
+    '.paper-card', '.beyond__text'
   ].join(','));
 
   if (!reduced && 'IntersectionObserver' in window) {

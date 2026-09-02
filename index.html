@@ -39,12 +39,18 @@
       <a href="#libraries">Libraries</a>
       <a href="#tooling">Tooling</a>
       <a href="#join">Community</a>
+      <a href="paper/">Paper</a>
     </nav>
 
     <div class="nav__actions">
-      <a class="btn btn--ghost nav__gh" href="https://github.com/Bio-Babel" target="_blank" rel="noopener">
+      <a class="btn btn--ghost nav__gh" href="https://github.com/Bio-Babel" target="_blank" rel="noopener" title="github.com/Bio-Babel">
         <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
-        GitHub
+        Bio-Babel
+      </a>
+      <span class="nav__sep" aria-hidden="true"></span>
+      <a class="nav__lab" href="https://www.devo-evo.com/" target="_blank" rel="noopener" aria-label="Qiu Lab" title="Qiu Lab @ Stanford">
+        <img src="assets/img/logo-qiulab-light.webp" alt="" width="153" height="171" loading="lazy">
+        <span>Qiu Lab</span>
       </a>
       <button class="nav__burger" id="navBurger" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -98,6 +104,7 @@
     <div class="hero__cta">
       <a class="btn btn--solid" href="#libraries">Browse the libraries</a>
       <a class="btn btn--outline" href="#stack">See the architecture</a>
+      <a class="btn btn--outline" href="paper/">Read the paper</a>
     </div>
 
     <button class="copychip" data-copy="pip install rgrid-python ggplot2-python biobabel">
@@ -259,7 +266,7 @@
           <h3>The methods people actually cite</h3>
           <p>Single-cell trajectories, intercellular communication, CNV calling. These build their
           <em>entire</em> visualization layer on the tiers below — so a Monocle 2 trajectory plot
-          renders like the R tutorial without adapter code.</p>
+          renders like the R tutorial.</p>
           <ul class="zig__pkgs">
             <li><code>monocle2py</code><span>DDRTree · BEAM · pseudotime</span></li>
             <li><code>monocle3</code><span>AnnData-native trajectories</span></li>
@@ -275,7 +282,7 @@
           <h3>What reaches the agent</h3>
           <p>Every tier below publishes a <code>_biobabel/</code> contract through a Python entry
           point. <code>biobabel</code> discovers them and serves 12 read-only tools over MCP to
-          Claude Code, Cursor, Codex and Continue. It runs no business logic and never executes
+          PantheonOS, Claude Code, Codex and Continue. It runs no business logic and never executes
           code.</p>
           <ul class="zig__pkgs">
             <li><code>biobabel</code><span>contract registry + MCP server</span></li>
@@ -767,6 +774,65 @@
       Every library in the catalog is <strong>under active testing</strong> — APIs stabilizing,
       edges still being filed. Use it for verifiable work, and tell us when it is wrong.
     </p>
+
+    <!-- extensibility: the second language pair -->
+    <div class="beyond" id="beyond">
+      <div class="beyond__text">
+        <p class="eyebrow">Extensibility</p>
+        <h3 class="beyond__title">Three components change with the language pair.</h3>
+        <p class="beyond__lede">
+          R&nbsp;→&nbsp;Python is the demonstration, not the definition. Carrying the toolkit to
+          another pair means re-specifying three language-specific components — the steps, the
+          scripts and the skills.
+        </p>
+
+        <ol class="beyond__parts">
+          <li>
+            <span class="beyond__n">01</span>
+            <h4>The steps</h4>
+            <p>The 13-step spine keeps its order; the target adds what it needs. Python&nbsp;→&nbsp;C++
+            adds a <strong>sanitizer step</strong>, because undefined behaviour compiles and runs while
+            looking correct.</p>
+          </li>
+          <li>
+            <span class="beyond__n">02</span>
+            <h4>The scripts</h4>
+            <p>The target toolchain, automated: configure, compile and test the C++, verify the
+            toolchain, generate the project and record state.</p>
+          </li>
+          <li>
+            <span class="beyond__n">03</span>
+            <h4>The skills</h4>
+            <p>The target-language references: Python-to-C++ translation patterns, build and
+            dependency handling, undefined behaviour and parity.</p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="beyond__side">
+        <article class="lib lib--pair">
+          <header class="lib__top">
+            <span class="lib__badge lib__badge--pair">Python → C++</span>
+            <span class="lib__tier">second pair</span>
+          </header>
+          <h3 class="lib__name">UMI-tools-cpp</h3>
+          <p class="lib__from">ports Python <code>umi_tools</code> &nbsp;·&nbsp; builds with CMake &nbsp;·&nbsp; MIT</p>
+          <p class="lib__blurb">Seven subcommands — <code>whitelist</code>, <code>extract</code>, <code>group</code>, <code>dedup</code>, <code>count</code>, <code>count_tab</code>, <code>prepare_for_em</code> — and the dispatcher, rebuilt on a C++ core library.</p>
+          <footer class="lib__bot">
+            <span class="lib__meta lib__meta--v">tracks 1.1.7.dev53</span>
+            <span class="lib__links">
+              <a href="https://github.com/Bio-Babel/UMI-tools-cpp" target="_blank" rel="noopener" aria-label="UMI-tools-cpp on GitHub" title="GitHub">
+                <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              </a>
+            </span>
+          </footer>
+          <button class="lib__copy" data-copy="git clone https://github.com/Bio-Babel/UMI-tools-cpp" title="git clone https://github.com/Bio-Babel/UMI-tools-cpp">
+            <span>git clone https://github.com/Bio-Babel/UMI-tools-cpp</span>
+            <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          </button>
+        </article>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -844,7 +910,7 @@
 <span class="t-d">├──</span> <span class="t-f">idioms/</span>*.yaml      <span class="t-c"># 15 verbatim runnable templates</span>
 <span class="t-d">├──</span> <span class="t-f">anti_patterns/</span>*    <span class="t-c"># 4 detectable mistakes + the correct form</span>
 <span class="t-d">├──</span> <span class="t-f">templates/</span>*.py     <span class="t-c"># real code that actually runs</span>
-<span class="t-d">└──</span> <span class="t-f">detectors.py</span>       <span class="t-c"># the AST checks, owned by the package</span>
+<span class="t-d">└──</span> <span class="t-f">detectors.py</span>       <span class="t-c"># the AST (abstract syntax tree) checks, owned by the package</span>
 </code></pre>
         </div>
 
@@ -1018,12 +1084,6 @@
     </div>
 
     <nav class="foot__cols" aria-label="Footer">
-      <div>
-        <h4>Project</h4>
-        <a href="#stack">The Stack</a>
-        <a href="#libraries">Libraries</a>
-        <a href="#tooling">Contracts &amp; tooling</a>
-      </div>
       <div>
         <h4>Open source</h4>
         <a href="https://github.com/Bio-Babel/bio-babel-MCP" target="_blank" rel="noopener">bio-babel-MCP</a>
