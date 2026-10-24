@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Community — Bio-Babel</title>
-<meta name="description" content="Three ways into Bio-Babel: tell us what is missing or wrong, bring a classic across, or adopt a package as its long-term caretaker.">
+<meta name="description" content="Bio-Babel community collaborations. Report bugs, port your own package with us, or help bring classic tools to modern languages.">
 <meta name="theme-color" content="#08090D">
 <link rel="canonical" href="https://biobabel.stanford.edu/community/">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
@@ -13,7 +13,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Bio-Babel — Community">
-<meta property="og:description" content="Three ways into Bio-Babel: tell us what is missing or wrong, bring a classic across, or adopt a package as its long-term caretaker.">
+<meta property="og:description" content="Bio-Babel community collaborations. Report bugs, port your own package with us, or help bring classic tools to modern languages.">
 <meta property="og:url" content="https://biobabel.stanford.edu/community/">
 <meta property="og:image" content="https://biobabel.stanford.edu/assets/img/og-card.png">
 <meta property="og:image:width" content="1200">
@@ -77,34 +77,92 @@
 <section class="section page">
   <div class="wrap">
     <p class="eyebrow">Bio-Babel</p>
-    <h1 class="h2">Community</h1>
-    <p class="lede">Three ways in, in rough order of commitment.</p>
+    <h1 class="h2">Community Contributions</h1>
+
+    <div class="collabs">
+      <article class="lib lib--collab">
+        <header class="lib__top">
+          <span class="lib__badge lib__badge--collab">Community collaboration · R → Python</span>
+        </header>
+        <h3 class="lib__name">SpatialCellChat</h3>
+        <p class="lib__blurb">CellChat v3 — cell–cell communication at single-cell resolution, from spatial transcriptomics data.</p>
+
+        <div class="collab__box">
+          <div class="collab__row">
+            <p class="collab__label">Original · R</p>
+            <p class="collab__repo">jinworks/SpatialCellChat</p>
+            <p class="collab__who"><a href="https://jinworks.github.io/index.html" target="_blank" rel="noopener" aria-label="Jin Lab homepage">Jin Lab ↗</a></p>
+            <p class="collab__links">
+              <a href="https://github.com/jinworks/SpatialCellChat" target="_blank" rel="noopener" aria-label="SpatialCellChat (R) on GitHub">GitHub ↗</a>
+            </p>
+          </div>
+          <div class="collab__row">
+            <p class="collab__label">Port · Python · Bio-Babel</p>
+            <p class="collab__repo">SpatialCellChat-python</p>
+            <p class="collab__links">
+              <a href="https://github.com/Bio-Babel/SpatialCellChat-python" target="_blank" rel="noopener" aria-label="SpatialCellChat-python on GitHub">GitHub ↗</a>
+              <a href="https://github.com/Bio-Babel/SpatialCellChat-python/blob/main/tutorials/SpatialCellChat_analysis_of_spatial_transcriptomics_data.ipynb" target="_blank" rel="noopener" aria-label="SpatialCellChat-python tutorial notebook">Tutorial ↗</a>
+            </p>
+          </div>
+        </div>
+
+        <button class="lib__copy" data-copy="pip install git+https://github.com/Bio-Babel/SpatialCellChat-python" title="pip install git+https://github.com/Bio-Babel/SpatialCellChat-python">
+          <span>pip install git+https://github.com/Bio-Babel/SpatialCellChat-python</span>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
+        </button>
+      </article>
+
+      <article class="lib lib--collab lib--built">
+        <header class="lib__top">
+          <span class="lib__badge lib__badge--built">Built on Bio-Babel · Python</span>
+        </header>
+        <h3 class="lib__name">ggtracks</h3>
+        <p class="lib__blurb">Genomic tracks as ggplot2-python geoms: gene models, splice junctions, coverage and ideograms, with intron compression and track stacking.</p>
+
+        <div class="collab__box">
+          <div class="collab__row">
+            <p class="collab__label">New library · Python</p>
+            <p class="collab__repo">ggtracks-python</p>
+            <p class="collab__links">
+              <a href="https://github.com/jefferyUstc/ggtracks-python" target="_blank" rel="noopener" aria-label="ggtracks-python on GitHub">GitHub ↗</a>
+              <a href="https://ggtracks-python.readthedocs.io/en/latest/" target="_blank" rel="noopener" aria-label="ggtracks documentation">Docs ↗</a>
+              <a href="https://github.com/jefferyUstc/ggtracks-python-tutorials" target="_blank" rel="noopener" aria-label="ggtracks tutorials">Tutorials ↗</a>
+            </p>
+          </div>
+        </div>
+
+        <button class="lib__copy" data-copy="pip install git+https://github.com/jefferyUstc/ggtracks-python" title="pip install git+https://github.com/jefferyUstc/ggtracks-python">
+          <span>pip install git+https://github.com/jefferyUstc/ggtracks-python</span>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
+        </button>
+      </article>
+    </div>
+
+    <h2 class="h2">Join the Community</h2>
 
     <ol class="join">
       <li class="join__row">
         <span class="join__k">01</span>
-        <div><h3>Tell us what is missing, or what is wrong</h3>
-          <p>Name a classic you wish existed on the other side, and the workflow that is painful
-          without it. Better still, report a port behaving differently from its reference — that one
-          belongs on the port's own repository. Divergence is a bug, and it is the most useful thing
-          you can send us.</p></div>
+        <div><h3>Report bugs and flaws</h3>
+          <p>Found a bug, a result that does not match the original package, or a gap in the
+          docs? Open an issue on that library's GitHub repository. If you are not sure which one,
+          open it here.</p></div>
         <a class="join__go" href="https://github.com/Bio-Babel/.github/issues" target="_blank" rel="noopener">Open an issue ↗</a>
       </li>
-      <li class="join__row">
-        <span class="join__k">02</span>
-        <div><h3>Bring one over</h3>
-          <p>Tell us which classic you would like to help carry across and we will help you scope
-          it — or simply start, in public. Rough drafts are welcome: the pipeline assists the draft,
-          and what needs more hands is the review and the stewardship that follow it.</p></div>
-        <a class="join__go" href="https://github.com/Bio-Babel/.github/issues" target="_blank" rel="noopener">Say hello ↗</a>
-      </li>
       <li class="join__row join__row--hi">
+        <span class="join__k">02</span>
+        <div><h3>Collaborate on porting your packages and software</h3>
+          <p>If you develop a package and want it to reach users of another language, we can port
+          it together. You keep full credit for the method, and the port is listed on this page as
+          a community collaboration.</p></div>
+        <a class="join__go" href="https://github.com/Bio-Babel/.github/issues" target="_blank" rel="noopener">Get in touch ↗</a>
+      </li>
+      <li class="join__row">
         <span class="join__k">03</span>
-        <div><h3>Adopt a package</h3>
-          <p>The scarcest resource here is not code, it is long-term maintainers. Every library is
-          its own repository with its own caretaker; if one of them matters to your work, consider
-          becoming that caretaker.</p></div>
-        <a class="join__go" href="https://github.com/Bio-Babel/.github/issues" target="_blank" rel="noopener">Volunteer ↗</a>
+        <div><h3>Collaborate on porting classic, still-useful software to modern languages</h3>
+          <p>Many tools that people still rely on were written years ago and have become hard to
+          keep running or build on. Tell us which one you depend on, or help us port it.</p></div>
+        <a class="join__go" href="https://github.com/Bio-Babel/.github/issues" target="_blank" rel="noopener">Suggest a tool ↗</a>
       </li>
     </ol>
   </div>

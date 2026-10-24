@@ -641,3 +641,41 @@ a.sys__cta:hover{background:var(--gold-soft);border-color:rgba(242,200,121,.62)}
   .paper-card{padding:1.5rem 1.3rem}
   .paper-viewer__frame{height:70vh}
 }
+
+/* ──────────────────────────────────────────────────────── community page ─ */
+/* a community card is a .lib card ending in one box with a row per repository: the original and
+   its port for a collaboration (sky), the library alone for one built on the ports (orange).
+   Cards keep their own height, so a card with one row has no gap inside it */
+.collabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:18px;
+  margin:3rem 0 5rem}   /* 3rem under a heading, as .join below; 5rem before the next heading */
+.lib__badge--collab{background:rgba(96,165,250,.11);color:#60A5FA;border-color:rgba(96,165,250,.28)}
+.lib__badge--built{background:rgba(251,146,60,.11);color:#FB923C;border-color:rgba(251,146,60,.28)}
+.lib--collab{padding:1.7rem 1.8rem 1.4rem}
+.lib--collab::before{background:linear-gradient(90deg,transparent,rgba(96,165,250,.6),transparent)}
+.lib--collab:hover{border-color:rgba(96,165,250,.3)}
+.lib--built::before{background:linear-gradient(90deg,transparent,rgba(251,146,60,.6),transparent)}
+.lib--built:hover{border-color:rgba(251,146,60,.3)}
+.lib--collab .lib__name{font-size:1.35rem}
+.lib--collab .lib__blurb{margin-top:.45rem}
+.lib--collab .lib__copy{margin-top:1.2rem}
+.collab__box{margin-top:1.4rem;border:1px solid var(--line);border-radius:11px;background:rgba(0,0,0,.2)}
+.collab__row{padding:1rem 1.15rem}
+.collab__row+.collab__row{border-top:1px solid var(--line)}
+.collab__label{margin:0 0 .55rem;font-family:var(--mono);font-size:.66rem;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--text-3)}
+.collab__repo{margin:0;font-family:var(--mono);font-size:.9rem;color:#FFFCF2;overflow-wrap:anywhere}
+.collab__who{margin:.3rem 0 0;font-size:.85rem;line-height:1.6;color:var(--text-2)}
+.collab__who a{color:var(--text);text-decoration:underline;text-decoration-color:var(--line-2);
+  text-underline-offset:3px;transition:color .2s,text-decoration-color .2s}
+.collab__who a:hover{color:var(--violet-2);text-decoration-color:currentColor}
+.collab__links{display:flex;flex-wrap:wrap;gap:1rem;margin:.85rem 0 0}
+.collab__links a{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--violet-2);transition:color .2s}
+.collab__links a:hover{color:#fff}
+
+@media (max-width:900px){
+  .collabs{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:680px){
+  .lib--collab{padding:1.4rem 1.3rem 1.2rem}
+}
