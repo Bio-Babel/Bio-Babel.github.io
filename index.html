@@ -23,9 +23,18 @@
 </head>
 <body>
 
+<!-- partial:icons · tools/partials/icons.html, stamped by tools/sync_partials.py — edit it there -->
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <symbol id="i-github" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></symbol>
+  <symbol id="i-pypi" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></g></symbol>
+  <symbol id="i-copy" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></g></symbol>
+</svg>
+<!-- /partial:icons -->
+
 <a class="skip-link" href="#main">Skip to content</a>
 
 <!-- ══════════════════════════════════════════════════════════════ NAV ═══ -->
+<!-- partial:nav · tools/partials/nav.html, stamped by tools/sync_partials.py — edit it there -->
 <header class="nav" id="nav">
   <div class="nav__inner">
     <a class="brand" href="#top" aria-label="Bio-Babel home">
@@ -38,13 +47,13 @@
       <a href="#stack">The Stack</a>
       <a href="#libraries">Libraries</a>
       <a href="#tooling">Tooling</a>
-      <a href="#join">Community</a>
+      <a href="community/">Community</a>
       <a href="paper/">Paper</a>
     </nav>
 
     <div class="nav__actions">
       <a class="btn btn--ghost nav__gh" href="https://github.com/Bio-Babel" target="_blank" rel="noopener" title="github.com/Bio-Babel">
-        <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
         Bio-Babel
       </a>
       <span class="nav__sep" aria-hidden="true"></span>
@@ -58,6 +67,7 @@
     </div>
   </div>
 </header>
+<!-- /partial:nav -->
 
 <main id="main">
 <span id="top"></span>
@@ -111,7 +121,7 @@
       <span class="copychip__prompt">$</span>
       <code>pip install rgrid-python ggplot2-python biobabel</code>
       <span class="copychip__icon" aria-hidden="true">
-        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+        <svg width="14" height="14" aria-hidden="true"><use href="#i-copy"/></svg>
       </span>
       <span class="copychip__ok">copied</span>
     </button>
@@ -356,16 +366,16 @@
           <span class="lib__meta lib__meta--v">v4.5.3.post6</span>
           <span class="lib__links">
             <a href="https://github.com/Bio-Babel/rgrid-python" target="_blank" rel="noopener" aria-label="rgrid-python on GitHub" title="GitHub">
-              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://pypi.org/project/rgrid-python/" target="_blank" rel="noopener" aria-label="rgrid-python on PyPI" title="PyPI">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-pypi"/></svg>
             </a>
           </span>
         </footer>
         <button class="lib__copy" data-copy="pip install rgrid-python" title="pip install rgrid-python">
           <span>pip install rgrid-python</span>
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
         </button>
       </article>
       <article class="lib" data-group="foundation">
@@ -381,16 +391,16 @@
           <span class="lib__meta lib__meta--v">v1.4.0.9000.post3</span>
           <span class="lib__links">
             <a href="https://github.com/Bio-Babel/scales-python" target="_blank" rel="noopener" aria-label="scales-python on GitHub" title="GitHub">
-              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://pypi.org/project/scales-python/" target="_blank" rel="noopener" aria-label="scales-python on PyPI" title="PyPI">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-pypi"/></svg>
             </a>
           </span>
         </footer>
         <button class="lib__copy" data-copy="pip install scales-python" title="pip install scales-python">
           <span>pip install scales-python</span>
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
         </button>
       </article>
       <article class="lib" data-group="foundation">
@@ -406,16 +416,16 @@
           <span class="lib__meta lib__meta--v">v0.3.6.9000.post1</span>
           <span class="lib__links">
             <a href="https://github.com/Bio-Babel/gtable-python" target="_blank" rel="noopener" aria-label="gtable-python on GitHub" title="GitHub">
-              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://pypi.org/project/gtable-python/" target="_blank" rel="noopener" aria-label="gtable-python on PyPI" title="PyPI">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-pypi"/></svg>
             </a>
           </span>
         </footer>
         <button class="lib__copy" data-copy="pip install gtable-python" title="pip install gtable-python">
           <span>pip install gtable-python</span>
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
         </button>
       </article>
       <article class="lib" data-group="grammar">
@@ -431,16 +441,16 @@
           <span class="lib__meta lib__meta--v">v4.0.2.9000.post7</span>
           <span class="lib__links">
             <a href="https://github.com/Bio-Babel/ggplot2-python" target="_blank" rel="noopener" aria-label="ggplot2-python on GitHub" title="GitHub">
-              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://pypi.org/project/ggplot2-python/" target="_blank" rel="noopener" aria-label="ggplot2-python on PyPI" title="PyPI">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-pypi"/></svg>
             </a>
           </span>
         </footer>
         <button class="lib__copy" data-copy="pip install ggplot2-python" title="pip install ggplot2-python">
           <span>pip install ggplot2-python</span>
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
         </button>
       </article>
       <article class="lib" data-group="ext">
@@ -456,16 +466,16 @@
           <span class="lib__meta lib__meta--v">v1.3.2.9000.post1</span>
           <span class="lib__links">
             <a href="https://github.com/Bio-Babel/patchwork-python" target="_blank" rel="noopener" aria-label="patchwork-python on GitHub" title="GitHub">
-              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://pypi.org/project/patchwork-python/" target="_blank" rel="noopener" aria-label="patchwork-python on PyPI" title="PyPI">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-pypi"/></svg>
             </a>
           </span>
         </footer>
         <button class="lib__copy" data-copy="pip install patchwork-python" title="pip install patchwork-python">
           <span>pip install patchwork-python</span>
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
         </button>
       </article>
       <article class="lib" data-group="ext">
@@ -481,16 +491,16 @@
           <span class="lib__meta lib__meta--v">v2.25.3</span>
           <span class="lib__links">
             <a href="https://github.com/Bio-Babel/ComplexHeatmap-python" target="_blank" rel="noopener" aria-label="complexheatmap-python on GitHub" title="GitHub">
-              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://pypi.org/project/complexheatmap-python/" target="_blank" rel="noopener" aria-label="complexheatmap-python on PyPI" title="PyPI">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-pypi"/></svg>
             </a>
           </span>
         </footer>
         <button class="lib__copy" data-copy="pip install complexheatmap-python" title="pip install complexheatmap-python">
           <span>pip install complexheatmap-python</span>
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
         </button>
       </article>
       <article class="lib" data-group="ext">
@@ -506,16 +516,16 @@
           <span class="lib__meta lib__meta--v">v1.0.13.post1</span>
           <span class="lib__links">
             <a href="https://github.com/Bio-Babel/pheatmap-python" target="_blank" rel="noopener" aria-label="pheatmap-python on GitHub" title="GitHub">
-              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://pypi.org/project/pheatmap-python/" target="_blank" rel="noopener" aria-label="pheatmap-python on PyPI" title="PyPI">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-pypi"/></svg>
             </a>
           </span>
         </footer>
         <button class="lib__copy" data-copy="pip install pheatmap-python" title="pip install pheatmap-python">
           <span>pip install pheatmap-python</span>
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
         </button>
       </article>
       <article class="lib" data-group="ext">
@@ -531,16 +541,16 @@
           <span class="lib__meta lib__meta--v">v0.9.8.9999</span>
           <span class="lib__links">
             <a href="https://github.com/Bio-Babel/ggrepel-python" target="_blank" rel="noopener" aria-label="ggrepel-python on GitHub" title="GitHub">
-              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://pypi.org/project/ggrepel-python/" target="_blank" rel="noopener" aria-label="ggrepel-python on PyPI" title="PyPI">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-pypi"/></svg>
             </a>
           </span>
         </footer>
         <button class="lib__copy" data-copy="pip install ggrepel-python" title="pip install ggrepel-python">
           <span>pip install ggrepel-python</span>
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
         </button>
       </article>
       <article class="lib" data-group="ext">
@@ -556,16 +566,16 @@
           <span class="lib__meta lib__meta--v">v0.12.6</span>
           <span class="lib__links">
             <a href="https://github.com/Bio-Babel/ggalluvial-python" target="_blank" rel="noopener" aria-label="ggalluvial-python on GitHub" title="GitHub">
-              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://pypi.org/project/ggalluvial-python/" target="_blank" rel="noopener" aria-label="ggalluvial-python on PyPI" title="PyPI">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-pypi"/></svg>
             </a>
           </span>
         </footer>
         <button class="lib__copy" data-copy="pip install ggalluvial-python" title="pip install ggalluvial-python">
           <span>pip install ggalluvial-python</span>
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
         </button>
       </article>
       <article class="lib" data-group="ext">
@@ -581,16 +591,16 @@
           <span class="lib__meta lib__meta--v">v0.3.1.9000</span>
           <span class="lib__links">
             <a href="https://github.com/Bio-Babel/ggh4x-python" target="_blank" rel="noopener" aria-label="ggh4x-python on GitHub" title="GitHub">
-              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://pypi.org/project/ggh4x-python/" target="_blank" rel="noopener" aria-label="ggh4x-python on PyPI" title="PyPI">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-pypi"/></svg>
             </a>
           </span>
         </footer>
         <button class="lib__copy" data-copy="pip install ggh4x-python" title="pip install ggh4x-python">
           <span>pip install ggh4x-python</span>
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
         </button>
       </article>
       <article class="lib" data-group="ext">
@@ -606,16 +616,16 @@
           <span class="lib__meta lib__meta--v">v0.5.2.9000</span>
           <span class="lib__links">
             <a href="https://github.com/Bio-Babel/ggnewscale-python" target="_blank" rel="noopener" aria-label="ggnewscale-python on GitHub" title="GitHub">
-              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://pypi.org/project/ggnewscale-python/" target="_blank" rel="noopener" aria-label="ggnewscale-python on PyPI" title="PyPI">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-pypi"/></svg>
             </a>
           </span>
         </footer>
         <button class="lib__copy" data-copy="pip install ggnewscale-python" title="pip install ggnewscale-python">
           <span>pip install ggnewscale-python</span>
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
         </button>
       </article>
       <article class="lib" data-group="analysis">
@@ -631,16 +641,16 @@
           <span class="lib__meta lib__meta--v">v2.9.0</span>
           <span class="lib__links">
             <a href="https://github.com/Bio-Babel/Monocle2-python" target="_blank" rel="noopener" aria-label="monocle2-python on GitHub" title="GitHub">
-              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://pypi.org/project/monocle2-python/" target="_blank" rel="noopener" aria-label="monocle2-python on PyPI" title="PyPI">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-pypi"/></svg>
             </a>
           </span>
         </footer>
         <button class="lib__copy" data-copy="pip install monocle2-python" title="pip install monocle2-python">
           <span>pip install monocle2-python</span>
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
         </button>
       </article>
       <article class="lib" data-group="analysis">
@@ -656,16 +666,16 @@
           <span class="lib__meta lib__meta--v">v1.4.26.post1</span>
           <span class="lib__links">
             <a href="https://github.com/Bio-Babel/Monocle3-python" target="_blank" rel="noopener" aria-label="monocle3-python on GitHub" title="GitHub">
-              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://pypi.org/project/monocle3-python/" target="_blank" rel="noopener" aria-label="monocle3-python on PyPI" title="PyPI">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-pypi"/></svg>
             </a>
           </span>
         </footer>
         <button class="lib__copy" data-copy="pip install monocle3-python" title="pip install monocle3-python">
           <span>pip install monocle3-python</span>
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
         </button>
       </article>
       <article class="lib" data-group="analysis">
@@ -681,16 +691,16 @@
           <span class="lib__meta lib__meta--v">v2.2.1.1</span>
           <span class="lib__links">
             <a href="https://github.com/Bio-Babel/Nichenet-python" target="_blank" rel="noopener" aria-label="nichenet-python on GitHub" title="GitHub">
-              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://pypi.org/project/nichenet-python/" target="_blank" rel="noopener" aria-label="nichenet-python on PyPI" title="PyPI">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-pypi"/></svg>
             </a>
           </span>
         </footer>
         <button class="lib__copy" data-copy="pip install nichenet-python" title="pip install nichenet-python">
           <span>pip install nichenet-python</span>
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
         </button>
       </article>
       <article class="lib" data-group="analysis">
@@ -706,16 +716,16 @@
           <span class="lib__meta lib__meta--v">v1.13.12</span>
           <span class="lib__links">
             <a href="https://github.com/Bio-Babel/tradeSeq-python" target="_blank" rel="noopener" aria-label="tradeSeq-python on GitHub" title="GitHub">
-              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://pypi.org/project/tradeSeq-python/" target="_blank" rel="noopener" aria-label="tradeSeq-python on PyPI" title="PyPI">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-pypi"/></svg>
             </a>
           </span>
         </footer>
         <button class="lib__copy" data-copy="pip install tradeSeq-python" title="pip install tradeSeq-python">
           <span>pip install tradeSeq-python</span>
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
         </button>
       </article>
       <article class="lib" data-group="analysis">
@@ -731,16 +741,16 @@
           <span class="lib__meta lib__meta--v">v1.1.0.post1</span>
           <span class="lib__links">
             <a href="https://github.com/Bio-Babel/copykat-python" target="_blank" rel="noopener" aria-label="copykat-python on GitHub" title="GitHub">
-              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://pypi.org/project/copykat-python/" target="_blank" rel="noopener" aria-label="copykat-python on PyPI" title="PyPI">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-pypi"/></svg>
             </a>
           </span>
         </footer>
         <button class="lib__copy" data-copy="pip install copykat-python" title="pip install copykat-python">
           <span>pip install copykat-python</span>
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
         </button>
       </article>
       <article class="lib" data-group="analysis">
@@ -756,16 +766,16 @@
           <span class="lib__meta lib__meta--v">v0.1.6</span>
           <span class="lib__links">
             <a href="https://github.com/Bio-Babel/DDRTree-python" target="_blank" rel="noopener" aria-label="ddrtree-python on GitHub" title="GitHub">
-              <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
             <a href="https://pypi.org/project/ddrtree-python/" target="_blank" rel="noopener" aria-label="ddrtree-python on PyPI" title="PyPI">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 2.6 20.5 7v10L12 21.4 3.5 17V7L12 2.6Z"/><path d="M3.7 7.1 12 11.6l8.3-4.5M12 11.6V21"/></svg>
+              <svg width="15" height="15" aria-hidden="true"><use href="#i-pypi"/></svg>
             </a>
           </span>
         </footer>
         <button class="lib__copy" data-copy="pip install ddrtree-python" title="pip install ddrtree-python">
           <span>pip install ddrtree-python</span>
-          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+          <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
         </button>
       </article>
     </div>
@@ -821,13 +831,13 @@
           <footer class="lib__bot">
             <span class="lib__links">
               <a href="https://github.com/Bio-Babel/UMI-tools-cpp" target="_blank" rel="noopener" aria-label="UMI-tools-cpp on GitHub" title="GitHub">
-                <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
               </a>
             </span>
           </footer>
           <button class="lib__copy" data-copy="git clone https://github.com/Bio-Babel/UMI-tools-cpp" title="git clone https://github.com/Bio-Babel/UMI-tools-cpp">
             <span>git clone https://github.com/Bio-Babel/UMI-tools-cpp</span>
-            <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+            <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
           </button>
         </article>
 
@@ -842,13 +852,13 @@
           <footer class="lib__bot">
             <span class="lib__links">
               <a href="https://github.com/Bio-Babel/UMI-tools-rust" target="_blank" rel="noopener" aria-label="UMI-tools-rust on GitHub" title="GitHub">
-                <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                <svg width="15" height="15" aria-hidden="true"><use href="#i-github"/></svg>
               </a>
             </span>
           </footer>
           <button class="lib__copy" data-copy="git clone https://github.com/Bio-Babel/UMI-tools-rust" title="git clone https://github.com/Bio-Babel/UMI-tools-rust">
             <span>git clone https://github.com/Bio-Babel/UMI-tools-rust</span>
-            <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5.2" y="5.2" width="8.3" height="8.3" rx="1.6"/><path d="M10.8 3.2A1.7 1.7 0 0 0 9.1 2H4.2A2.2 2.2 0 0 0 2 4.2v4.9c0 .8.5 1.4 1.2 1.7"/></svg>
+            <svg width="13" height="13" aria-hidden="true"><use href="#i-copy"/></svg>
           </button>
         </article>
       </div>
@@ -1041,42 +1051,6 @@
     </div>  </div>
 </section>
 
-<!-- ═════════════════════════════════════════════════════════════ JOIN ═══ -->
-<section class="section section--alt" id="join">
-  <div class="wrap">
-    <p class="eyebrow">Community</p>
-    <h2 class="h2">Three ways in, in rough order of commitment.</h2>
-
-    <ol class="join">
-      <li class="join__row">
-        <span class="join__k">01</span>
-        <div><h3>Tell us what is missing, or what is wrong</h3>
-          <p>Name a classic you wish existed on the other side, and the workflow that is painful
-          without it. Better still, report a port behaving differently from its reference — that one
-          belongs on the port's own repository. Divergence is a bug, and it is the most useful thing
-          you can send us.</p></div>
-        <a class="join__go" href="https://github.com/Bio-Babel/.github/issues" target="_blank" rel="noopener">Open an issue ↗</a>
-      </li>
-      <li class="join__row">
-        <span class="join__k">02</span>
-        <div><h3>Bring one over</h3>
-          <p>Tell us which classic you would like to help carry across and we will help you scope
-          it — or simply start, in public. Rough drafts are welcome: the pipeline assists the draft,
-          and what needs more hands is the review and the stewardship that follow it.</p></div>
-        <a class="join__go" href="https://github.com/Bio-Babel/.github/issues" target="_blank" rel="noopener">Say hello ↗</a>
-      </li>
-      <li class="join__row join__row--hi">
-        <span class="join__k">03</span>
-        <div><h3>Adopt a package</h3>
-          <p>The scarcest resource here is not code, it is long-term maintainers. Every library is
-          its own repository with its own caretaker; if one of them matters to your work, consider
-          becoming that caretaker.</p></div>
-        <a class="join__go" href="https://github.com/Bio-Babel/.github/issues" target="_blank" rel="noopener">Volunteer ↗</a>
-      </li>
-    </ol>
-  </div>
-</section>
-
 <!-- ═══════════════════════════════════════════════════════════ CLOSER ═══ -->
 <section class="closer">
   <div class="closer__bg" aria-hidden="true"><div class="hero__grid"></div></div>
@@ -1092,6 +1066,7 @@
 </main>
 
 <!-- ═══════════════════════════════════════════════════════════ FOOTER ═══ -->
+<!-- partial:footer · tools/partials/footer.html, stamped by tools/sync_partials.py — edit it there -->
 <footer class="foot">
   <div class="wrap foot__inner">
     <div class="foot__brand">
@@ -1124,6 +1099,7 @@
     <p><em>&ldquo;Go to, let us build us a city and a tower, whose top may reach unto heaven.&rdquo;</em> — Genesis 11:4</p>
   </div>
 </footer>
+<!-- /partial:footer -->
 
 <script src="assets/js/main.js"></script>
 </body>

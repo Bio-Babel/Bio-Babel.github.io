@@ -51,6 +51,7 @@ body{
   -moz-osx-font-smoothing:grayscale;overflow-x:hidden;
 }
 img,svg{display:block;max-width:100%}
+.sprite{display:none}   /* the <symbol> sheet each page carries; icons draw it with <use> */
 a{color:inherit;text-decoration:none}
 code{font-family:var(--mono);font-size:.885em;letter-spacing:-.01em}
 p code,li code,td code{
@@ -414,6 +415,27 @@ em{font-style:italic}
 .libs__note{margin:2.4rem 0 0;padding:1rem 1.2rem;border-radius:11px;font-size:.9rem;
   color:var(--text-2);border:1px solid rgba(242,200,121,.2);background:rgba(242,200,121,.05)}
 
+/* ─────────────────────────────────────────── beyond: the second pair ── */
+/* must stay above the responsive block: its media-query overrides share this specificity,
+   so they only win if they come later in the file */
+.beyond{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:48px;align-items:start;
+  margin-top:5.5rem;padding-top:3.4rem;border-top:1px solid var(--line)}
+.beyond__title{margin:0;font-size:clamp(1.45rem,2.6vw,1.95rem);line-height:1.22;font-weight:660;
+  letter-spacing:-.028em;color:#FFFCF2;max-width:26ch}
+.beyond__lede{margin:1rem 0 0;max-width:60ch;font-size:.98rem;line-height:1.74;color:var(--text-2)}
+.beyond__parts{list-style:none;margin:2rem 0 0;padding:0}
+.beyond__parts li{display:grid;grid-template-columns:3rem minmax(0,1fr);gap:.2rem 1rem;
+  padding:1.1rem 0;border-top:1px solid var(--line)}
+.beyond__parts li:last-child{border-bottom:1px solid var(--line)}
+.beyond__n{grid-row:1/3;padding-top:.28rem;font-family:var(--mono);font-size:.72rem;
+  letter-spacing:.16em;color:var(--text-3)}
+.beyond__parts h4{margin:0;font-size:1rem;font-weight:640;letter-spacing:-.02em;color:#F3F6FC}
+.beyond__parts p{margin:0;font-size:.885rem;line-height:1.68;color:var(--text-2)}
+.beyond__side{display:grid;gap:18px}
+.lib__badge--pair{background:rgba(251,113,133,.11);color:#FB7185;border-color:rgba(251,113,133,.28)}
+.lib--pair::before{background:linear-gradient(90deg,transparent,rgba(251,113,133,.6),transparent)}
+.lib--pair:hover{border-color:rgba(251,113,133,.3)}
+
 /* ──────────────────────────────────────────────── the three systems ────── */
 .sys{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:3rem}
 .sys__card{
@@ -586,28 +608,12 @@ a.sys__cta:hover{background:var(--gold-soft);border-color:rgba(242,200,121,.62)}
   .reveal{opacity:1;transform:none}
 }
 
-/* ─────────────────────────────────────────── beyond: the second pair ── */
-.beyond{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:48px;align-items:start;
-  margin-top:5.5rem;padding-top:3.4rem;border-top:1px solid var(--line)}
-.beyond__title{margin:0;font-size:clamp(1.45rem,2.6vw,1.95rem);line-height:1.22;font-weight:660;
-  letter-spacing:-.028em;color:#FFFCF2;max-width:26ch}
-.beyond__lede{margin:1rem 0 0;max-width:60ch;font-size:.98rem;line-height:1.74;color:var(--text-2)}
-.beyond__parts{list-style:none;margin:2rem 0 0;padding:0}
-.beyond__parts li{display:grid;grid-template-columns:3rem minmax(0,1fr);gap:.2rem 1rem;
-  padding:1.1rem 0;border-top:1px solid var(--line)}
-.beyond__parts li:last-child{border-bottom:1px solid var(--line)}
-.beyond__n{grid-row:1/3;padding-top:.28rem;font-family:var(--mono);font-size:.72rem;
-  letter-spacing:.16em;color:var(--text-3)}
-.beyond__parts h4{margin:0;font-size:1rem;font-weight:640;letter-spacing:-.02em;color:#F3F6FC}
-.beyond__parts p{margin:0;font-size:.885rem;line-height:1.68;color:var(--text-2)}
-.beyond__side{display:grid;gap:18px}
-.lib__badge--pair{background:rgba(251,113,133,.11);color:#FB7185;border-color:rgba(251,113,133,.28)}
-.lib--pair::before{background:linear-gradient(90deg,transparent,rgba(251,113,133,.6),transparent)}
-.lib--pair:hover{border-color:rgba(251,113,133,.3)}
+/* ────────────────────────────────────────────────────── standalone pages ─ */
+/* the opening section of every page but the home page: clears the fixed nav, narrower measure */
+.page{padding-top:150px}
+.page>.wrap{max-width:980px}
 
 /* ──────────────────────────────────────────────────────────── paper page ─ */
-.paper{padding-top:150px}
-.paper>.wrap{max-width:980px}
 .paper-card{margin-top:2.4rem;padding:2rem 2.1rem;border:1px solid var(--line);border-radius:var(--r);
   background:linear-gradient(160deg,rgba(255,255,255,.032),rgba(255,255,255,.008))}
 .paper-card__title{margin:0;font-size:clamp(1.3rem,2.4vw,1.72rem);line-height:1.3;font-weight:660;
@@ -631,7 +637,7 @@ a.sys__cta:hover{background:var(--gold-soft);border-color:rgba(242,200,121,.62)}
 .paper__note{margin:1rem 0 0;font-size:.82rem;color:var(--text-3)}
 
 @media (max-width:680px){
-  .paper{padding-top:120px}
+  .page{padding-top:120px}
   .paper-card{padding:1.5rem 1.3rem}
   .paper-viewer__frame{height:70vh}
 }

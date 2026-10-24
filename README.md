@@ -3,6 +3,21 @@
 Source of <https://biobabel.stanford.edu> (the `CNAME`; <https://bio-babel.github.io> redirects
 there). Pages serves `main` from the repo root.
 
+## Shared chrome
+
+The nav, the footer and the icon sprite are the same on every page, so each lives once in
+`tools/partials/` and is stamped into the pages between `<!-- partial:NAME -->` markers. Edit the
+partial, never the copy inside a page, then:
+
+```bash
+python3 tools/sync_partials.py            # rewrite the pages
+python3 tools/sync_partials.py --check    # exit 1 if a page is out of date
+```
+
+A new page needs the three marker pairs and an entry in `PAGES` in the script. Icons are
+`<symbol>`s in `tools/partials/icons.html`, drawn with `<svg width="15" height="15"
+aria-hidden="true"><use href="#i-github"/></svg>` (`i-github`, `i-pypi`, `i-copy`).
+
 ## Hard-coded facts
 
 The catalog is a snapshot, so some numbers are hand-maintained. Find all of them:
